@@ -1,0 +1,79 @@
+# ==========================================================
+#  Unreal Engine 5 - .gitignore
+# ==========================================================
+
+# --- Folder hasil generate engine (bisa dibuat ulang) ---
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/*
+!Build/*/
+Build/*/**
+!Build/*/PakBlacklist*.txt
+!Build/**/*.ico
+
+# Plugin build output
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# --- Hasil packaging / cooking ---
+Packaged/
+Releases/
+*.pak
+*.ucas
+*.utoc
+
+# --- Visual Studio / Rider / VS Code (jika nanti pakai C++) ---
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.vcxproj*
+*.xcodeproj
+*.xcworkspace
+*.code-workspace
+compile_commands.json
+
+# --- File kompilasi C++ ---
+*.slo
+*.lo
+*.o
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.lib
+*.a
+*.la
+*.exe
+*.out
+*.app
+*.ipa
+*.pdb
+*.ilk
+*.exp
+
+# --- File sementara / backup ---
+*.tmp
+*.bak
+*.log
+*~
+*.swp
+*_BuiltData.uasset.tmp
+
+# --- Developer folder (aset coba-coba milik masing-masing anggota) ---
+# Hapus baris ini jika ingin Developers ikut di-share.
+Content/Developers/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
