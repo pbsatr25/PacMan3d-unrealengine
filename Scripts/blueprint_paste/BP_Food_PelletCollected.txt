@@ -1,0 +1,31 @@
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_0"
+   FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.GameplayStatics'",MemberName="GetGameMode")
+   bIsPureFunc=True
+   NodePosX=0
+   NodePosY=160
+   NodeGuid=41BB0BE4D7E348E189CCBC53B116816E
+   CustomProperties Pin (PinId=99AB31B05DBA4FA4845C3090570E0C38,PinName="self",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.GameplayStatics'",DefaultObject="/Script/Engine.Default__GameplayStatics",bHidden=True,)
+   CustomProperties Pin (PinId=7771EC8E1C354B7FA12E2B4E6DB85C33,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",bHidden=True,)
+   CustomProperties Pin (PinId=8B7C288A87D64AD7AC182AE946452592,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.GameModeBase'",LinkedTo=(K2Node_DynamicCast_0 3C5486DF26FC499ABB9B01D0FFC8DA2B,),)
+End Object
+Begin Object Class=/Script/BlueprintGraph.K2Node_DynamicCast Name="K2Node_DynamicCast_0"
+   TargetType="/Script/Engine.BlueprintGeneratedClass'/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C'"
+   NodePosX=250
+   NodePosY=0
+   NodeGuid=EF817B41F5084B51983B1EF4CC32C5B5
+   CustomProperties Pin (PinId=8BA1EBCE499E42C9BAFF6A111A8C3E09,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,)
+   CustomProperties Pin (PinId=51F5EC21569244F0971AD761DA98E078,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,LinkedTo=(K2Node_CallFunction_1 BBBDF2D194B949A79C82882C9176F9F7,),)
+   CustomProperties Pin (PinId=2D305D71AECA4777901B7E96C173D3F2,PinName="CastFailed",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,)
+   CustomProperties Pin (PinId=3C5486DF26FC499ABB9B01D0FFC8DA2B,PinName="Object",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",LinkedTo=(K2Node_CallFunction_0 8B7C288A87D64AD7AC182AE946452592,),)
+   CustomProperties Pin (PinId=3E8C2C04081747048E82EC80DE3A6887,PinName="AsBP Third Person Game Mode",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C'",LinkedTo=(K2Node_CallFunction_1 5A2C9AFD6AD54311A766CAE34285005C,),)
+   CustomProperties Pin (PinId=7E1A15731D5F4103857C48D7A1179E84,PinName="bSuccess",Direction="EGPD_Output",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,bHidden=True,)
+End Object
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_1"
+   FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C'",MemberName="PelletCollected")
+   NodePosX=600
+   NodePosY=0
+   NodeGuid=0825C815D31B41E99032216D4B611196
+   CustomProperties Pin (PinId=BBBDF2D194B949A79C82882C9176F9F7,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,LinkedTo=(K2Node_DynamicCast_0 51F5EC21569244F0971AD761DA98E078,),)
+   CustomProperties Pin (PinId=397A47448B6C4DC297230195273D6DB3,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,)
+   CustomProperties Pin (PinId=5A2C9AFD6AD54311A766CAE34285005C,PinName="self",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.BP_ThirdPersonGameMode_C'",LinkedTo=(K2Node_DynamicCast_0 3E8C2C04081747048E82EC80DE3A6887,),)
+End Object

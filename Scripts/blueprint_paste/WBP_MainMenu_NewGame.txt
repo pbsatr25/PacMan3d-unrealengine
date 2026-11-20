@@ -1,0 +1,40 @@
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_0"
+   FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.Widget'",MemberName="RemoveFromParent")
+   NodePosX=400
+   NodePosY=0
+   NodeGuid=3F0386AD08F44D14B79BEE1A4095CB97
+   CustomProperties Pin (PinId=9D0836EB3A9C439C953DAE272E57995A,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,)
+   CustomProperties Pin (PinId=15A606B63AD04F3B9DC500569A7D3D34,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,LinkedTo=(K2Node_CreateWidget_0 4877971E0C1845A3A8562C2BCFFB9361,),)
+   CustomProperties Pin (PinId=104052E42E4C41CBBC219EFB51E873EA,PinName="self",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Widget'",)
+End Object
+Begin Object Class=/Script/UMGEditor.K2Node_CreateWidget Name="K2Node_CreateWidget_0"
+   NodePosX=700
+   NodePosY=0
+   NodeGuid=7BB3B356E6AE4BEAACBB1B418BD5C8C8
+   CustomProperties Pin (PinId=4877971E0C1845A3A8562C2BCFFB9361,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,LinkedTo=(K2Node_CallFunction_0 15A606B63AD04F3B9DC500569A7D3D34,),)
+   CustomProperties Pin (PinId=E816F9BAA7574EC2ACCA0A96406299CE,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,LinkedTo=(K2Node_CallFunction_1 21FCD46C231A45538711000C55CB28C3,),)
+   CustomProperties Pin (PinId=D2DF3F27A8E344BE8CE7E5FCB63B4A2C,PinName="Class",PinType.PinCategory="class",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",DefaultObject="/Game/UI/Widgets/WBP_LevelSelect.WBP_LevelSelect_C",)
+   CustomProperties Pin (PinId=9340F40F4093468D849AD94993EA43DC,PinName="OwningPlayer",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.PlayerController'",LinkedTo=(K2Node_CallFunction_2 B852E9410DF045BABC98C5F55D24C621,),)
+   CustomProperties Pin (PinId=82ABFDC19CB04751B6066C193FE1C20F,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",LinkedTo=(K2Node_CallFunction_1 C1653890C85F4E11918960D01AB019FC,),)
+End Object
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_1"
+   FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="AddToViewport")
+   NodePosX=1050
+   NodePosY=0
+   NodeGuid=F74D2CFC6FCB4A138D21755A2948E03C
+   CustomProperties Pin (PinId=21FCD46C231A45538711000C55CB28C3,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,LinkedTo=(K2Node_CreateWidget_0 E816F9BAA7574EC2ACCA0A96406299CE,),)
+   CustomProperties Pin (PinId=185BF1C539AF49EFBF41221C21F8E90F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,)
+   CustomProperties Pin (PinId=C1653890C85F4E11918960D01AB019FC,PinName="self",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",LinkedTo=(K2Node_CreateWidget_0 82ABFDC19CB04751B6066C193FE1C20F,),)
+   CustomProperties Pin (PinId=C90039CA8A104C168976CD6DBECC14CE,PinName="ZOrder",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,DefaultValue="0",)
+End Object
+Begin Object Class=/Script/BlueprintGraph.K2Node_CallFunction Name="K2Node_CallFunction_2"
+   FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.GameplayStatics'",MemberName="GetPlayerController")
+   bIsPureFunc=True
+   NodePosX=450
+   NodePosY=180
+   NodeGuid=87A0EDB45AC244798821671EFBB8E233
+   CustomProperties Pin (PinId=0B64D271E8C940CAA8DEA35E03CC13EC,PinName="self",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.GameplayStatics'",DefaultObject="/Script/Engine.Default__GameplayStatics",bHidden=True,)
+   CustomProperties Pin (PinId=73A46D5C82B5435DA9F5718F04E879B8,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",bHidden=True,)
+   CustomProperties Pin (PinId=C8499D3063DE45CFB26D8A13A027A56C,PinName="PlayerIndex",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,DefaultValue="0",)
+   CustomProperties Pin (PinId=B852E9410DF045BABC98C5F55D24C621,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.PlayerController'",LinkedTo=(K2Node_CreateWidget_0 9340F40F4093468D849AD94993EA43DC,),)
+End Object
